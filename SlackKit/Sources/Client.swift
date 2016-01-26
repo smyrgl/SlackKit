@@ -22,6 +22,7 @@
 // THE SOFTWARE.
 
 import Foundation
+import cURL
 import Starscream
 
 public class Client: WebSocketDelegate {
@@ -66,14 +67,11 @@ public class Client: WebSocketDelegate {
     
     //MARK: - Connection
     public func connect() {
-        let request = NSURLRequest(URL: NSURL(string:"https://slack.com/api/rtm.start?token="+token)!)
-        NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.currentQueue()!) {
-            (response, data, error) -> Void in
-            guard let data = data else {
-                return
-            }
+        let request = CURL(url: "https://slack.com/api/rtm.start?token="+token)
+        request.perform { (result, response, data) in
             do {
-                let result = try NSJSONSerialization.JSONObjectWithData(data, options: []) as! [String: AnyObject]
+                let jsonData = NSData(bytes: data, length: data.count)
+                let result = try NSJSONSerialization.JSONObjectWithData(jsonData, options: []) as! [String: AnyObject]
                 if (result["ok"] as! Bool == true) {
                     self.initialSetup(result)
                     let socketURL = NSURL(string: result["url"] as! String)
@@ -82,7 +80,6 @@ public class Client: WebSocketDelegate {
                     self.webSocket?.connect()
                 }
             } catch _ {
-                print(error)
             }
         }
     }
@@ -217,6 +214,7 @@ public class Client: WebSocketDelegate {
     
     // MARK: - WebSocketDelegate
     public func websocketDidConnect(socket: WebSocket) {
+    
     }
     
     public func websocketDidDisconnect(socket: WebSocket, error: NSError?) {
@@ -234,6 +232,7 @@ public class Client: WebSocketDelegate {
         }
         do {
             try EventDispatcher.eventDispatcher(NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments) as! [String: AnyObject])
+            print(try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments))
         }
         catch _ {
             

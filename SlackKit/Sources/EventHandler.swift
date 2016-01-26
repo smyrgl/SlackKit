@@ -28,7 +28,7 @@ internal struct EventHandler {
     //MARK: - Initial connection
     static func connected() {
         Client.sharedInstance.connected = true
-        
+        Client.sharedInstance.sendMessage("blah blah blah", channelID: Client.sharedInstance.channels.first!.1.id!)
         if let delegate = Client.sharedInstance.slackEventsDelegate {
             delegate.clientConnected()
         }

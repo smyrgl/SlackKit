@@ -1,0 +1,44 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7C8CB4917A87F5E5383E6800524CC50437576509",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "AD7482D0CD05E34F32D97935C3E2A7EC2A349747" : 0,
+    "7C8CB4917A87F5E5383E6800524CC50437576509" : 0,
+    "C86D95FCAEB1FEA0694B5D4AC7241D7E5F42F31D" : 0,
+    "651AB8C1D8CAB583536F4C833F6A529DA84E7691" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D3F75864-EB12-4491-80BE-05850E020191",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "AD7482D0CD05E34F32D97935C3E2A7EC2A349747" : "Starscream\/Packages\/cURL-1.0.0\/",
+    "7C8CB4917A87F5E5383E6800524CC50437576509" : "SlackKit\/",
+    "C86D95FCAEB1FEA0694B5D4AC7241D7E5F42F31D" : "Starscream\/",
+    "651AB8C1D8CAB583536F4C833F6A529DA84E7691" : "Starscream\/Packages\/LibEvent-1.0.0\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SlackKit",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SlackKit.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/pvzig\/LibEvent.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "651AB8C1D8CAB583536F4C833F6A529DA84E7691"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/pvzig\/SlackRTMKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7C8CB4917A87F5E5383E6800524CC50437576509"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/pvzig\/cURL",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AD7482D0CD05E34F32D97935C3E2A7EC2A349747"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/pvzig\/Starscream.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C86D95FCAEB1FEA0694B5D4AC7241D7E5F42F31D"
+    }
+  ]
+}
