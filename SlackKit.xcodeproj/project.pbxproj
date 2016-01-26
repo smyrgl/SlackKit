@@ -11,11 +11,12 @@
 		26088AC31C56EB560040C0F3 /* cURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26088ABF1C56EB560040C0F3 /* cURL.swift */; };
 		26088AC41C56EB560040C0F3 /* LibEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26088AC01C56EB560040C0F3 /* LibEvent.swift */; };
 		26088AC51C56EB560040C0F3 /* Threading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26088AC11C56EB560040C0F3 /* Threading.swift */; };
-		26088AD31C56F1FB0040C0F3 /* curl_support.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26088AD21C56F1FB0040C0F3 /* curl_support.cpp */; };
 		26088AD81C56F2710040C0F3 /* libevent_pthreads.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26088AD61C56F2710040C0F3 /* libevent_pthreads.a */; };
 		26088AD91C56F2710040C0F3 /* libevent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26088AD71C56F2710040C0F3 /* libevent.a */; };
 		26088ADC1C56F3170040C0F3 /* libcurl.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 26088ADB1C56F3170040C0F3 /* libcurl.tbd */; };
-		26088AE21C5714420040C0F3 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26088AE11C5714420040C0F3 /* WebSocket.swift */; };
+		26088AE81C57EDB60040C0F3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26088AE71C57EDB60040C0F3 /* main.swift */; };
+		26088AEF1C57EE3D0040C0F3 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26088AEE1C57EE2C0040C0F3 /* Starscream.framework */; };
+		26088AF11C57EEE20040C0F3 /* curl_support.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26088AF01C57EEE20040C0F3 /* curl_support.cpp */; };
 		26B50F3B1C52CAE20066F03A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B50F3A1C52CAE20066F03A /* AppDelegate.swift */; };
 		26B50F3D1C52CAE20066F03A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26B50F3C1C52CAE20066F03A /* Assets.xcassets */; };
 		26B50F401C52CAE20066F03A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26B50F3E1C52CAE20066F03A /* MainMenu.xib */; };
@@ -34,17 +35,27 @@
 		26BBA1A01C398E3C00BF7225 /* UserGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BBA1931C398E3C00BF7225 /* UserGroup.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		26088AED1C57EE2C0040C0F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26088AE91C57EE2C0040C0F3 /* Starscream.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D9C3E35F19E48FF1009FC285;
+			remoteInfo = Starscream;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		26072A341BB48B3A00CD650C /* SlackKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SlackKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26088ABE1C56EB560040C0F3 /* Bytes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Bytes.swift; path = Sources/Bytes.swift; sourceTree = "<group>"; };
 		26088ABF1C56EB560040C0F3 /* cURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = cURL.swift; path = Sources/cURL.swift; sourceTree = "<group>"; };
 		26088AC01C56EB560040C0F3 /* LibEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LibEvent.swift; path = Sources/LibEvent.swift; sourceTree = "<group>"; };
 		26088AC11C56EB560040C0F3 /* Threading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Threading.swift; path = Sources/Threading.swift; sourceTree = "<group>"; };
-		26088AD21C56F1FB0040C0F3 /* curl_support.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = curl_support.cpp; path = "../Packages/cURL-1.0.0/curl_support.cpp"; sourceTree = "<group>"; };
 		26088AD61C56F2710040C0F3 /* libevent_pthreads.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libevent_pthreads.a; path = "../Packages/LibEvent-1.0.0/osx/libevent_pthreads.a"; sourceTree = "<group>"; };
 		26088AD71C56F2710040C0F3 /* libevent.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libevent.a; path = "../Packages/LibEvent-1.0.0/osx/libevent.a"; sourceTree = "<group>"; };
 		26088ADB1C56F3170040C0F3 /* libcurl.tbd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text-based-dylib-definition"; path = libcurl.tbd; sourceTree = "<group>"; };
-		26088AE11C5714420040C0F3 /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Sources/WebSocket.swift; sourceTree = "<group>"; };
+		26088AE91C57EE2C0040C0F3 /* Starscream.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Starscream.xcodeproj; path = ../Starscream/Starscream.xcodeproj; sourceTree = "<group>"; };
+		26088AF01C57EEE20040C0F3 /* curl_support.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = curl_support.cpp; path = "../Packages/cURL-1.0.0/curl_support.cpp"; sourceTree = "<group>"; };
 		2661A6A41BBF62FF0026F67B /* SlackKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlackKit.h; sourceTree = "<group>"; };
 		266E05F01BBF780C00840D76 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26BBA1871C398E3C00BF7225 /* Bot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Bot.swift; path = Sources/Bot.swift; sourceTree = "<group>"; };
@@ -67,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26088AEF1C57EE3D0040C0F3 /* Starscream.framework in Frameworks */,
 				26088ADC1C56F3170040C0F3 /* libcurl.tbd in Frameworks */,
 				26088AD81C56F2710040C0F3 /* libevent_pthreads.a in Frameworks */,
 				26088AD91C56F2710040C0F3 /* libevent.a in Frameworks */,
@@ -86,6 +98,7 @@
 		26072A2A1BB48B3A00CD650C = {
 			isa = PBXGroup;
 			children = (
+				26088AE91C57EE2C0040C0F3 /* Starscream.xcodeproj */,
 				2661A6811BBF60E60026F67B /* SlackKit */,
 				26072A351BB48B3A00CD650C /* Products */,
 			);
@@ -105,7 +118,7 @@
 				26088AD61C56F2710040C0F3 /* libevent_pthreads.a */,
 				26088AD71C56F2710040C0F3 /* libevent.a */,
 				26088ADB1C56F3170040C0F3 /* libcurl.tbd */,
-				26088AD21C56F1FB0040C0F3 /* curl_support.cpp */,
+				26088AF01C57EEE20040C0F3 /* curl_support.cpp */,
 				26088ABE1C56EB560040C0F3 /* Bytes.swift */,
 				26088ABF1C56EB560040C0F3 /* cURL.swift */,
 				26088AC01C56EB560040C0F3 /* LibEvent.swift */,
@@ -114,19 +127,18 @@
 			name = cURL;
 			sourceTree = "<group>";
 		};
-		26088AE01C570E640040C0F3 /* Starscream */ = {
+		26088AEA1C57EE2C0040C0F3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				26088AE11C5714420040C0F3 /* WebSocket.swift */,
+				26088AEE1C57EE2C0040C0F3 /* Starscream.framework */,
 			);
-			name = Starscream;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		2661A6811BBF60E60026F67B /* SlackKit */ = {
 			isa = PBXGroup;
 			children = (
 				26088AC71C56EB590040C0F3 /* cURL */,
-				26088AE01C570E640040C0F3 /* Starscream */,
 				26BBA1871C398E3C00BF7225 /* Bot.swift */,
 				26BBA1881C398E3C00BF7225 /* Channel.swift */,
 				26BBA1891C398E3C00BF7225 /* Client.swift */,
@@ -211,12 +223,28 @@
 			mainGroup = 26072A2A1BB48B3A00CD650C;
 			productRefGroup = 26072A351BB48B3A00CD650C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 26088AEA1C57EE2C0040C0F3 /* Products */;
+					ProjectRef = 26088AE91C57EE2C0040C0F3 /* Starscream.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				26072A331BB48B3A00CD650C /* SlackKit */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		26088AEE1C57EE2C0040C0F3 /* Starscream.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Starscream.framework;
+			remoteRef = 26088AED1C57EE2C0040C0F3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		26072A321BB48B3A00CD650C /* Resources */ = {
@@ -238,7 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26088AD31C56F1FB0040C0F3 /* curl_support.cpp in Sources */,
+				26088AF11C57EEE20040C0F3 /* curl_support.cpp in Sources */,
 				26088AC51C56EB560040C0F3 /* Threading.swift in Sources */,
 				26BBA1991C398E3C00BF7225 /* EventDispatcher.swift in Sources */,
 				26BBA1951C398E3C00BF7225 /* Channel.swift in Sources */,
@@ -247,7 +275,6 @@
 				26BBA19E1C398E3C00BF7225 /* Types.swift in Sources */,
 				26BBA1961C398E3C00BF7225 /* Client.swift in Sources */,
 				26BBA19A1C398E3C00BF7225 /* EventHandler.swift in Sources */,
-				26088AE21C5714420040C0F3 /* WebSocket.swift in Sources */,
 				26BBA1971C398E3C00BF7225 /* Event.swift in Sources */,
 				26088AC31C56EB560040C0F3 /* cURL.swift in Sources */,
 				26BBA1941C398E3C00BF7225 /* Bot.swift in Sources */,

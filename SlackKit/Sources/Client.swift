@@ -22,6 +22,7 @@
 // THE SOFTWARE.
 
 import Foundation
+import Starscream
 import cURL
 
 public class Client: WebSocketDelegate {
