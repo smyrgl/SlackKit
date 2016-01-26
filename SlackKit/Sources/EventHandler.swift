@@ -28,7 +28,6 @@ internal struct EventHandler {
     //MARK: - Initial connection
     static func connected() {
         Client.sharedInstance.connected = true
-        Client.sharedInstance.sendMessage("blah blah blah", channelID: Client.sharedInstance.channels.first!.1.id!)
         if let delegate = Client.sharedInstance.slackEventsDelegate {
             delegate.clientConnected()
         }
@@ -92,12 +91,12 @@ internal struct EventHandler {
                 }
             }
             
-            let timeout = dispatch_time(DISPATCH_TIME_NOW, Int64(5.0 * Double(NSEC_PER_SEC)))
+            /*let timeout = dispatch_time(DISPATCH_TIME_NOW, Int64(5.0 * Double(NSEC_PER_SEC)))
             dispatch_after(timeout, dispatch_get_main_queue()) {
                 if let index = Client.sharedInstance.channels[channelID]?.usersTyping.indexOf(userID) {
                     Client.sharedInstance.channels[channelID]?.usersTyping.removeAtIndex(index)
                 }
-            }
+            }*/
         }
     }
     

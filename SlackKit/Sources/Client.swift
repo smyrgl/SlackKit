@@ -23,7 +23,6 @@
 
 import Foundation
 import cURL
-import Starscream
 
 public class Client: WebSocketDelegate {
     
