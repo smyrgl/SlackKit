@@ -94,16 +94,15 @@ public class Client: WebSocketDelegate {
     }
     
     private func formatMessageToSlackJsonString(message: (msg: String, channel: String)) -> NSData? {
-        let json: [String: AnyObject] = [
+        let json = [
             "id": NSNumber(double: NSDate().timeIntervalSince1970),
-            "type": "message",
+            "type": NSString(string: "message"),
             "channel": message.channel,
             "text": slackFormatEscaping(message.msg)
         ]
         addSentMessage(json)
         do {
-            let dict = NSDictionary(dictionary: json)
-            let data = try NSJSONSerialization.dataWithJSONObject(dict, options: NSJSONWritingOptions.PrettyPrinted)
+            let data = try NSJSONSerialization.dataWithJSONObject(json, options: NSJSONWritingOptions.PrettyPrinted)
             return data
         }
         catch _ {
@@ -112,14 +111,14 @@ public class Client: WebSocketDelegate {
     }
     
     private func addSentMessage(dictionary: [String: AnyObject]) {
-        var message = dictionary
+        /*var message = dictionary
         let ts = message["id"] as! Int
         message.removeValueForKey("id")
         message["ts"] = "\(ts)"
         if let id = authenticatedUser?.id {
             message["user"] = id
         }
-        sentMessages["\(ts)"] = Message(message: message)
+        sentMessages["\(ts)"] = Message(message: message)*/
     }
     
     private func slackFormatEscaping(string: String) -> String {
