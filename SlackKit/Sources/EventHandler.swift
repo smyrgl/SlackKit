@@ -31,6 +31,7 @@ internal struct EventHandler {
         if let delegate = Client.sharedInstance.slackEventsDelegate {
             delegate.clientConnected()
         }
+        Client.sharedInstance.sendMessage("blah blah blah", channelID: Client.sharedInstance.channels.first!.1.id!)
     }
     
     //MARK: - Messages

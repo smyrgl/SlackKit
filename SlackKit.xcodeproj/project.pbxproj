@@ -15,7 +15,7 @@
 		26088AD81C56F2710040C0F3 /* libevent_pthreads.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26088AD61C56F2710040C0F3 /* libevent_pthreads.a */; };
 		26088AD91C56F2710040C0F3 /* libevent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26088AD71C56F2710040C0F3 /* libevent.a */; };
 		26088ADC1C56F3170040C0F3 /* libcurl.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 26088ADB1C56F3170040C0F3 /* libcurl.tbd */; };
-		26088ADF1C570E5E0040C0F3 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26088ADE1C570E5E0040C0F3 /* WebSocket.swift */; };
+		26088AE21C5714420040C0F3 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26088AE11C5714420040C0F3 /* WebSocket.swift */; };
 		26B50F3B1C52CAE20066F03A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B50F3A1C52CAE20066F03A /* AppDelegate.swift */; };
 		26B50F3D1C52CAE20066F03A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26B50F3C1C52CAE20066F03A /* Assets.xcassets */; };
 		26B50F401C52CAE20066F03A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26B50F3E1C52CAE20066F03A /* MainMenu.xib */; };
@@ -44,7 +44,7 @@
 		26088AD61C56F2710040C0F3 /* libevent_pthreads.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libevent_pthreads.a; path = "../Packages/LibEvent-1.0.0/osx/libevent_pthreads.a"; sourceTree = "<group>"; };
 		26088AD71C56F2710040C0F3 /* libevent.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libevent.a; path = "../Packages/LibEvent-1.0.0/osx/libevent.a"; sourceTree = "<group>"; };
 		26088ADB1C56F3170040C0F3 /* libcurl.tbd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.text-based-dylib-definition"; path = libcurl.tbd; sourceTree = "<group>"; };
-		26088ADE1C570E5E0040C0F3 /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
+		26088AE11C5714420040C0F3 /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Sources/WebSocket.swift; sourceTree = "<group>"; };
 		2661A6A41BBF62FF0026F67B /* SlackKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlackKit.h; sourceTree = "<group>"; };
 		266E05F01BBF780C00840D76 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26BBA1871C398E3C00BF7225 /* Bot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Bot.swift; path = Sources/Bot.swift; sourceTree = "<group>"; };
@@ -117,7 +117,7 @@
 		26088AE01C570E640040C0F3 /* Starscream */ = {
 			isa = PBXGroup;
 			children = (
-				26088ADE1C570E5E0040C0F3 /* WebSocket.swift */,
+				26088AE11C5714420040C0F3 /* WebSocket.swift */,
 			);
 			name = Starscream;
 			sourceTree = "<group>";
@@ -247,11 +247,11 @@
 				26BBA19E1C398E3C00BF7225 /* Types.swift in Sources */,
 				26BBA1961C398E3C00BF7225 /* Client.swift in Sources */,
 				26BBA19A1C398E3C00BF7225 /* EventHandler.swift in Sources */,
+				26088AE21C5714420040C0F3 /* WebSocket.swift in Sources */,
 				26BBA1971C398E3C00BF7225 /* Event.swift in Sources */,
 				26088AC31C56EB560040C0F3 /* cURL.swift in Sources */,
 				26BBA1941C398E3C00BF7225 /* Bot.swift in Sources */,
 				26BBA19B1C398E3C00BF7225 /* File.swift in Sources */,
-				26088ADF1C570E5E0040C0F3 /* WebSocket.swift in Sources */,
 				26BBA19C1C398E3C00BF7225 /* Message.swift in Sources */,
 				26BBA19D1C398E3C00BF7225 /* Team.swift in Sources */,
 				26BBA1A01C398E3C00BF7225 /* UserGroup.swift in Sources */,
