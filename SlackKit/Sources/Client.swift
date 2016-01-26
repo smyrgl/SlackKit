@@ -97,7 +97,7 @@ public class Client: WebSocketDelegate {
         let json: [String: AnyObject] = [
             "id": NSNumber(double: NSDate().timeIntervalSince1970),
             "type": NSString(string: "message"),
-            "channel": message.channel,
+            "channel":  NSString(string: message.channel),
             "text": slackFormatEscaping(message.msg)
         ]
         addSentMessage(json)
