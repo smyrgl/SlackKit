@@ -94,7 +94,7 @@ public class Client: WebSocketDelegate {
     }
     
     private func formatMessageToSlackJsonString(message: (msg: String, channel: String)) -> NSData? {
-        let json: [String: NSObject] = [
+        let json: [String: AnyObject] = [
             "id": NSNumber(double: NSDate().timeIntervalSince1970),
             "type": NSString(string: "message"),
             "channel": message.channel,
@@ -102,7 +102,7 @@ public class Client: WebSocketDelegate {
         ]
         addSentMessage(json)
         do {
-            let data = try NSJSONSerialization.dataWithJSONObject(json, options: NSJSONWritingOptions.PrettyPrinted)
+            let data = try NSJSONSerialization.dataWithJSONObject(json as! AnyObject, options: NSJSONWritingOptions.PrettyPrinted)
             return data
         }
         catch _ {
