@@ -11,6 +11,6 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.9'
   s.requires_arc = true
   s.source_files = 'SlackKit/Sources/*.swift'  
-  s.frameworks = 'Foundation'
+  s.frameworks = 'Foundation', 'Cocoa'
   s.dependency 'Starscream', '~> 1.0.2'
 end
